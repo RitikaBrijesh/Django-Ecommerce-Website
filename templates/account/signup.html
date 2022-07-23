@@ -8,6 +8,7 @@
       <div class="container">
         <div class="row block-9">
           <div class="col-md-6 order-md-last d-flex">
+           <p>Password must  be of 8 charachters </p>
             <form class="bg-white p-5 contact-form" action="{% url 'signup' %}" method="post">
               {% csrf_token %} {% for field in form %}
               <div class="form-group">
